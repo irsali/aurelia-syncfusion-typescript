@@ -1,0 +1,10 @@
+<template>
+
+  <require from="./widget.css"></require>
+
+  <div id="host" resizeable resize.trigger="resize($event.detail) & throttle:500">
+    <canvas ref=elmt></canvas>
+  </div>
+  <h2>width: ${elmt.width}</h2>
+  <h2>height: ${elmt.height}</h2>
+</template>
